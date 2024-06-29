@@ -1,0 +1,7 @@
+title: My NYTimes Style Site
+description: A Jekyll site styled like NYTimes
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://swyntlabs.com" # the base hostname & protocol for your site
+theme: minima
+plugins:
+  - jekyll-feed
