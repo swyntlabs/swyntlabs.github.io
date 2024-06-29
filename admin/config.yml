@@ -1,0 +1,18 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update
+
+media_folder: "assets/uploads" # Folder where user uploaded files should go
+public_folder: "/assets/uploads" # Folder where files will be accessible in the browser
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Author", name: "author", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Font Size", name: "font_size", widget: "select", options: ["small", "medium", "large"]}
